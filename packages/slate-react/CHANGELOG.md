@@ -1,5 +1,31 @@
 # slate-react
 
+## 0.66.0
+
+### Minor Changes
+
+- [#3888](https://github.com/ianstormtaylor/slate/pull/3888) [`25afbd43`](https://github.com/ianstormtaylor/slate/commit/25afbd43001cdee852af6386d2b701d943b788da) Thanks [@bkrausz](https://github.com/bkrausz)! - Use native character insertion to fix browser/OS text features
+
+### Patch Changes
+
+- [#4132](https://github.com/ianstormtaylor/slate/pull/4132) [`48b71294`](https://github.com/ianstormtaylor/slate/commit/48b7129447347c9cf7a0535026287896ef59779b) Thanks [@ulion](https://github.com/ulion)! - Make onDomSelectionChange trigger after onClick.
+
+* [#4450](https://github.com/ianstormtaylor/slate/pull/4450) [`220f2d2c`](https://github.com/ianstormtaylor/slate/commit/220f2d2ce6dffcc1a0f2ea1e8725601b8ea1949b) Thanks [@neko-neko](https://github.com/neko-neko)! - Changed so that the onKeyDown event do not fired while IME converting.
+
+- [#4452](https://github.com/ianstormtaylor/slate/pull/4452) [`935b3a79`](https://github.com/ianstormtaylor/slate/commit/935b3a79d6ec7d7e8f20804b2703e984e9c396e0) Thanks [@dylans](https://github.com/dylans)! - double ime fix for qq browser
+
+* [#4454](https://github.com/ianstormtaylor/slate/pull/4454) [`d06706c9`](https://github.com/ianstormtaylor/slate/commit/d06706c9e15bbbdd7cdd9a1bbb38c87d37c85ea1) Thanks [@imdbsd](https://github.com/imdbsd)! - Fix to read fragment from data-slate-fragment when application/x-slate-fragment is missing
+
+- [#4460](https://github.com/ianstormtaylor/slate/pull/4460) [`ace397f9`](https://github.com/ianstormtaylor/slate/commit/ace397f96602d93ab9216e3d3434f55eef981e4d) Thanks [@dylans](https://github.com/dylans)! - fix double character insertion regression due to unnecessary memo
+
+* [#4451](https://github.com/ianstormtaylor/slate/pull/4451) [`8e4120ae`](https://github.com/ianstormtaylor/slate/commit/8e4120ae315151705152e62944737ca4f62ad446) Thanks [@githoniel](https://github.com/githoniel)! - fix IME double input with editor mark
+
+- [#4433](https://github.com/ianstormtaylor/slate/pull/4433) [`a1f925bd`](https://github.com/ianstormtaylor/slate/commit/a1f925bddfb8e4507977b3449972d4521d05b148) Thanks [@imdbsd](https://github.com/imdbsd)! - Fix copy-paste a slate fragment on android editable
+
+* [#4365](https://github.com/ianstormtaylor/slate/pull/4365) [`906e5af1`](https://github.com/ianstormtaylor/slate/commit/906e5af1b1af07454da0a93490fca70b58fd9986) Thanks [@samarsault](https://github.com/samarsault)! - fix a bug where element selections were not captured by useSelected
+
+- [#4342](https://github.com/ianstormtaylor/slate/pull/4342) [`834ce348`](https://github.com/ianstormtaylor/slate/commit/834ce3483dc407a6293ba29cac8f192c13f57b01) Thanks [@imdbsd](https://github.com/imdbsd)! - Fix editor mark is not inserted on android
+
 ## 0.65.3
 
 ### Patch Changes
