@@ -195,8 +195,7 @@ export const withReact = <T extends Editor>(editor: T) => {
   }
 
   e.insertData = (data: DataTransfer) => {
-    e.insertFragmentData(data)
-    e.insertTextData(data)
+    !e.insertFragmentData(data) && e.insertTextData(data)
   }
 
   e.insertFragmentData = (data: DataTransfer) => {
@@ -211,8 +210,10 @@ export const withReact = <T extends Editor>(editor: T) => {
       const decoded = decodeURIComponent(window.atob(fragment))
       const parsed = JSON.parse(decoded) as Node[]
       e.insertFragment(parsed)
-      return
+      return true
     }
+
+    return false
   }
 
   e.insertTextData = (data: DataTransfer) => {
